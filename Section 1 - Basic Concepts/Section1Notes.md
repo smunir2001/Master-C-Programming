@@ -97,3 +97,19 @@ Header files define information about some of the functions that are provided by
     * structure declarations
     * typedef statements
     * function prototypes
+## Displaying output
+```C
+#include <stdio.h>
+#include <stdlib.h>
+int main(int argc, char* argv[]) {
+    # standard library function
+    printf("Hello world!");
+    return EXIT_SUCCESS:
+}
+```
+__printf():__ a standard library function
+* it outputs information to the command line (the standard output stream), which is the command line by default)
+* the information displayed is based on what appears between the parentheses that immediately follow the function (printf)
+* also notice that this line does end with a semicolon
+* not only can simple phrases be displayed, but the values of variables and the results of computations can also be displayed
+    * can be used for debugging
