@@ -32,7 +32,7 @@ Operating system
 * a program that controls the entire operation of a computer
     * all input/output
     * manages the computer's resources and handles the execution of programs
-    * Windows, Unix, Android, iOS, etc
+    * Windows, UNIX, Android, iOS, etc
 
 Fetch/execute cycle (life of a CPU)
 * fetches an instruction from memory (using registers) and executes it (loop)
@@ -78,6 +78,64 @@ Writing a program
     * programs are released and used by many people
     * have to continue to fix new bugs or add new features
 ### Overview
+C is a general-purpose, imperative computer programming language that supports structured programming.
+* uses statements that change a program's state, focuses on how
+
+Currently, it is one of the most widely used programming languages of all time
+
+C is a modern language
+* has most basic control structures and features of modern languages
+* designed for top-down planning
+* organized around the use of functions (modular design) structured programming
+* a very reliable and readable program
+
+C is used on everything from minicomputers, Unix/Linux systems to PC's and mainframes.
+
+C is the preferred language for producing word processing programs, spreadsheets, and compilers.
+
+C  has become popular for programming embedded systems.
+* used to program microprocessors found in automobiles, cameras, DVD players, etc
+
+C has and continues to play a strong role in the development of Linux.
+
+C programs are easy to modify and easy to adapt to new models or languages.
+
+C provides constructs that map efficiently to typical machine instructions and thus is used by programs that were previously implemented in assembly language.
+* provides low-level access to memory (has many low-level capabilites)
+* requires minimal run-time support
+### History of C language
+In the 1990s, many software houses began turning to the C++ language for large programming projects.
+* C is a subset of C++ with object-oriented programming tools added
+    * any C program is a valid C++ program
+    * by learning C, you also learn much of C++
+
+C was invented in 1972 by Dennis Ritchie of Bell Laboratories.
+* Ritchie was working on the design of the UNIX operating system
+* was created as a tool for working programmers
+    * main goal is to be a useful language
+    * easy readability and writability
+
+C initially became widely known as the development language of the UNIX operating system.
+* virtually all new major operating systems are written in C and/or C++
+
+C evolved from a previous programming language named B.
+* uses many of the important concepts of B while adding data typing and other powerful features
+    * B was a "typeless" language --- every data item occupied one "word" in memory, and the burden of typing variables fell on the shoulders of the programmer
+
+C is available for most computers.
+
+C is also hardware independent.
+
+By the late 1970s, C had evolved into what is now referred to as "traditional C".
+
+The rapid expansion of C working on many different hardware platforms led to many variations that were similar but often incompatible.
+* a standard version of C was created (C89/C90/C99, C11)
+
+A program wrriten only in Standard C and without any hardware-dependent assumptions will run correctly on any platform with a standard C compiler.
+* non-standard C programs may run only on a certain platform or with a particular compiler
+* C89 is supported by current C compilers
+    * most C code being written today is based on it
+### Language features
 ## Course Curriculum
 * Overview of C
 * Language features
