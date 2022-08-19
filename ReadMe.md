@@ -266,17 +266,17 @@ __Linking:__ after the program has been translated into object code, it is ready
     * the set of source files that make up the program will usually be integrated under a project name, which is used to refer to the whole program
 
 __Executing:__ the execution stage is where you run your program
-    * each of the statements of the program is sequentially executed in turn
-    * if the program requests any data from the user the program temporarily suspends its execution so that the input can be entered
-    * results that are displayed by the program (output) will appear in a window called the console
-    * this stage can also generate a wide variety of error conditions
-        * producing the wrong output
-        * just sitting there and doing nothing
-        * crashing your computer
-    * if the program does not perform the intended functionality then it will be necessary to go back and reanalyze the program's logic
-        * known as the debugging phase, correct all the known problems or bugs from the program
-        * will need to make changes to the original source program
-            * the entire process of compiling, linking, and executing the program must be repeated until the desired results are obtained
+* each of the statements of the program is sequentially executed in turn
+* if the program requests any data from the user the program temporarily suspends its execution so that the input can be entered
+* results that are displayed by the program (output) will appear in a window called the console
+* this stage can also generate a wide variety of error conditions
+    * producing the wrong output
+    * just sitting there and doing nothing
+    * crashing your computer
+* if the program does not perform the intended functionality then it will be necessary to go back and reanalyze the program's logic
+    * known as the debugging phase, correct all the known problems or bugs from the program
+    * will need to make changes to the original source program
+        * the entire process of compiling, linking, and executing the program must be repeated until the desired results are obtained
 ### Section 1 - Basic Concepts
 * Comments, The preprocessor, The #include statement, Displaying output, Reading input from the terminal
 ### Section 2 - Variables and Data Types
