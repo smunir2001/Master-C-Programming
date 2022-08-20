@@ -113,3 +113,25 @@ __printf():__ a standard library function
 * also notice that this line does end with a semicolon
 * not only can simple phrases be displayed, but the values of variables and the results of computations can also be displayed
     * can be used for debugging
+## Reading input from the terminal
+We have discussed output, now lets learn a bit about input.
+* very useful to ask the user to enter data into a program
+    * via the terminal/console
+* the C library contains several input functions, and scanf() is the most general of them
+    * can ready a variety of formats
+* reads the input from the standard input stream __stdin__ and scans that input according to the __format__ provided
+    * format can be a simple constant string, but you can specify %s, %d, %c, %f, etc..., to read strings, integers, characters, or floats
+* if the stdin is input from the keyboard then text is read in because the keys generate text characters: letters, digits, and punctuation
+    * when you enter the integer 2014, you type the characters 2, 0, 1, and 4
+    * if you want to store that as a numerical value rather than as a string, your program has to convert the string character-by-character to a numerical value and this is the job of the scanf() function.
+
+__scanf():__ like printf(), this function uses a control string followed by a list of arguments.
+* control string indicates the destination data types for the input stream of characters
+* the printf() function uses variable names, constants, and expressions as its argument list
+* the scanf() function uses pointers to variables
+* remember these 3 rules about __scanf()__
+    * returns the number of items that it successfully reads
+    * if you use scanf() to read a value for one of the basic variable types we've discussed, precede the variable name with an &
+    * if you use scanf() to read a string into a character array, don't use an &
+* the scanf() function uses whitespace (newlines, tabs, and spaces) to decide how to divide the input into separate fields
+* scanf() is the inverse of printf(), which converts integers, floating-point numbers, characters, and C strings to text that is to be displayed onscreen
