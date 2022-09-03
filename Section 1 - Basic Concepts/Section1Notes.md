@@ -2,6 +2,8 @@ smunir2001@gmail.com | August 19, 2022 | Section1Notes.md
 # Section 1 - Basic Concepts
 ## Files included:
 * Comments.c
+* DisplayingOutput.c
+* ReadingInput.c
 ## Comments in C
 Comments are used in a program to document a program and to enhance its readability.
 
@@ -135,3 +137,4 @@ __scanf():__ like printf(), this function uses a control string followed by a li
     * if you use scanf() to read a string into a character array, don't use an &
 * the scanf() function uses whitespace (newlines, tabs, and spaces) to decide how to divide the input into separate fields
 * scanf() is the inverse of printf(), which converts integers, floating-point numbers, characters, and C strings to text that is to be displayed onscreen
+# Section 1 complete: September 3, 2022
