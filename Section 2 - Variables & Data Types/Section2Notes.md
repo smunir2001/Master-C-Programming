@@ -2,6 +2,7 @@ smunir2001@gmail.com | September 3, 2022 | Section2Notes.md
 # Section 2 - Variables & Data Types
 ## Files included:
 * DataTypes.c
+* Enums.c
 ## Overview
 Remember that a program needs to store the instructions of its program and the data that it acts upon while your computer is executing that program.
 * this information is stored in memory (RAM)
@@ -126,3 +127,75 @@ The type unsigned int, or unsigned, is used for variables that have only nonnega
 
 The keyword signed can be used with any of the signed types to make your intent explicit.
 * short, short int, signed short, and signed short int are all names for the same type
+## Enums & chars
+### Enums
+A data type that allows a programmer to define a variable and specify the valid values that could be stored into that variable.
+* can create a variable named "myColor" and it can only contain one of the primary colors, red, yellow, or blue, and no other values
+
+You first have to define the enum type and give it a name.
+* initiated by the keyword __enum__
+* then the name of the enumerated data type
+* then list of identifiers (enclosed in a set of curly braces) that define the permissible values that can be assigned to the type
+```C
+enum primaryColor {red, yellow, blue};
+```
+Variables declared to be of this data type can be assigned the values red, yellow, and blue inside the program, and no other values.
+
+To declare a variable to be of type enum primaryColor:
+* use the keyword __enum__
+* followed by the enumerated type name
+* folowed by a vasriable list; so the statement
+```C
+enum primaryColor myColor, samsColor;
+
+myColor = red;
+```
+```C
+enum month {January, February, March, April, May, June, July, August, September, October, November, December};
+
+enum month myBirthdayMonth = October;
+```
+The compiler actually treats enumeration identifiers as integer constants.
+* if you want to have a specific integer value associated with an enumeration identifier, the integer can be assigned to the identifier when the data type is defined
+```C
+enum direction {up, down, left = 10, right};
+```
+An enumerated data type direction is defined with the values up, down, left, and right.
+* up = 0 because it appears first in the list
+* 1 to down because it appears next
+* 10 to left because it is explicitly assigned this value
+* 11 to right because it appears immediately after left in the list
+### Chars
+Chars represent a single character such as the letter 'a', the digit character '6', or a semicolon (';')
+* character literals use single quotes such as 'A' or 'Z'
+* you can also declare char variables to be unsigned
+    * can be used to explicitly tell the compiler that a particular variable is a signed quantity
+```C
+char my_char = 's';
+```
+### Esacpe characters
+C contains special charactes that represent actions.
+* backspacing
+* going to the next line
+* making the terminal bell ring (or speaker beep)
+
+We can represent these actions by using special symbol sequences.
+* called escape sequences
+* escape sequences must be enclosed in single quotes when assigned to a character variable
+```C
+char x = '\n';
+```
+### Escape characters
+| Sequence | Meaning |
+|----------|---------|
+| \a | Alert | (ANSI C). |
+| \b | Backspace. |
+| \f | Form feed. |
+| \n | Newline. |
+| \r | Carriage return. |
+| \t | Horizontal tab. |
+| \v | Vertical tab. |
+| \\\ | Backslash (\) |
+| \\' | Single quote (') |
+| \\" | Double quote (") |
+| \\? | Question mark (?) |
