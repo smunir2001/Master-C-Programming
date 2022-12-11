@@ -199,3 +199,20 @@ char x = '\n';
 | \\' | Single quote (') |
 | \\" | Double quote (") |
 | \\? | Question mark (?) |
+## Format Specifiers
+Used when displaying variables as output.
+* they specify the type of data of the variable to be displayed.
+```C
+int sum = 89;
+printf("The sum is %d\n", sum)
+```
+The __printf()__ function can display as output the values of variables.
+* has two items or arguments enclosed within the parentheses
+* arguments are separated by a comma
+* first argument to the __printf()__ routine is always the character string to be displayed
+* along with the display of the character string, you might also frequently want to have the value of certain program variables displayed
+```C
+// printing float values with precision
+float my_float = 3.99932323232;
+printf("my_float = %.2f", my_float)
+```
