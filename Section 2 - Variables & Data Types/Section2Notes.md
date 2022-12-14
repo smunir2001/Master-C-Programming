@@ -216,3 +216,17 @@ The __printf()__ function can display as output the values of variables.
 float my_float = 3.99932323232;
 printf("my_float = %.2f", my_float)
 ```
+## Command-Line Arguments
+There are times when a program is developed that requires the user to enter a small amount of information at the terminal.
+* this information might consist of a number indicating the triangular number that you want to have calculated or a word that you want to have looked up in a ditionary.
+
+Two ways of handling this:
+1. Requesting the data from the user
+2. Supply the information to the program at the time the program is executed (command-line arguments)
+
+We know that the __main()__ function is a special function in C --> entry point of the program.
+
+When __main()__ is called by the runtime system, two arguments are actually passed to the function.
+* the first argument (argc for argument count) is an integer value that specifies the number of arguments typed on the command line.
+* the second argument (argv for argument vector) is an array of character pointers (strings).
+    * the first entry in this array is a pointer to the name of the program that is executing.
