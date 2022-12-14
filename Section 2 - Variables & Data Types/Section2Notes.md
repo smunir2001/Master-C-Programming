@@ -3,6 +3,9 @@ smunir2001@gmail.com | September 3, 2022 | Section2Notes.md
 ## Files included:
 * DataTypes.c
 * Enums.c
+* Chars.c
+* FormatSpecifiers.c
+* CommandLineArgs.c
 ## Overview
 Remember that a program needs to store the instructions of its program and the data that it acts upon while your computer is executing that program.
 * this information is stored in memory (RAM)

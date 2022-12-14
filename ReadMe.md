@@ -278,7 +278,7 @@ __Executing:__ the execution stage is where you run your program
     * will need to make changes to the original source program
         * the entire process of compiling, linking, and executing the program must be repeated until the desired results are obtained
 ### Section 1 - Basic Concepts
-* Comments, The preprocessor, The #include statement, Displaying output, Reading input from the terminal
+* Comments, The preprocessor, The __#include statement__, Displaying output, Reading input from the terminal
 ### Section 2 - Variables and Data Types
 * Basic data types, Enums and chars, Format specifiers, Command line arguments
 ### Section 3 - Operators
