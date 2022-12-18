@@ -282,6 +282,7 @@ __Executing:__ the execution stage is where you run your program
 ### Section 2 - Variables and Data Types
 * Basic data types, Enums and chars, Format specifiers, Command line arguments
 ### Section 3 - Operators
+* Logical operators, Boolean operators, Assignment/relational operators, Expressions & statements, Bitwise operators, The __Cast__ and __sizeof__ operators, Operator precedence
 ### Section 4 - Control Flow
 ### Section 5 - Arrays
 ### Section 6 - Functions
