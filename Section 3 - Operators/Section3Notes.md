@@ -88,4 +88,50 @@ A relational operator will compare variables against eachother.
 | > | Checks if the value of the left operand is greater than the value of the right operand. If yes, then the condition becomes true. | (A > B) is not true. |
 | < | Checks if the value of the left operand is less than the value of the right operand. If yes, then the conidition becomes true. | (A < B) is true. |
 | >= | Checks if the value of the left operand is greater than or equal to the value of the right operand. If yes, then the condition becomes true. | (A >= B) is not true. |
-| <= | Checks if the valuye of the left operand is less than or equal to the value of the right operand. If yes, then the condition becomes true. | (A <= B) is true. |
+| <= | Checks if the valuye of the left operand is less than or equal to the value of the right operand. If yes, then the condition becomes true. | (A <= B) is true.
+### Bitwise Operators
+C offers bitwise logical and shift operators.
+* look something like the logical operators you saw earlier but are quite different.
+* operate on the bits in integer values.
+
+One major use of the bitwise AND, &, and the bitwise OR, |, is present in operations to test and setr individual bits in an integer variable.
+* can use individual bits to store data that involve one of two choices.
+
+Example: you can use a single integer variable to store several characteristics of a person.
+* store whether the person is a male or female with one bit
+* use three other bits to specify whether the person can speak French, German, or Italian
+* another bit to record whether the person's salary is more than $50,000 or more
+* in just four bits you have a substantial set of data recorded
+### Binary Numbers
+A binary number is a number that includes only ones and zeroes.
+* the number could be of any length
+* the following are all examples of binary numbers
+
+| Example 1) | Example 2) |
+|------------|------------|
+| 0 | 10101 |
+| 1 | 0101010 | 
+| 10 | 1011110101 |
+| 01 | 0110101110 |
+| 111000 | 000111 |
+
+every binary number has a corresponding decimal value (and vice versa)
+
+| Binary Number | Decimal Equivalent |
+|---------------|--------------------|
+| 1 | 1 |
+| 10 | 2 |
+| 11 | 3 |
+| ... | ... |
+| 1010111 | 87 |
+* each position for a binary number has a value
+* for each digit, multiply the digit by its position value
+* add up all of the proudcts to get the final result
+### Bitwise Operators
+| Operator | Description | Example |
+|----------|-------------|---------|
+| & | Binary AND operator copies a bit to the result if it exists in both operands. | (A & B) = 12 |
+| / | Binary OR operator copies a bit if it exists in either operand. | (A / B) = 61 |
+| ^ | Binary XOR operator copies the bit if it is set in one operand but not both. | (A ^ B) = 49 |
+| << | Binary Left Shift operator. The left operand's value is moved left by the number of bits specified by the right operand. | A << 2 = 240 |
+| >> | Binary Right Shift operator. The left operand's value is moved right by the number of bits specified by the right operand. | A >> 2 |
