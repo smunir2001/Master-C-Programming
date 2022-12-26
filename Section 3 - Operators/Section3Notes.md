@@ -2,6 +2,7 @@ smunir2001@gmail.com | December 14, 2022 | Section3Notes.md
 # Section 3 - Operators
 ## Files included:
 * BasicOperators.c
+* BitwiseOperators.c
 ## Overview
 Operators are functions that use a symbolic name.
 * perform mathematical or logical functions
@@ -135,3 +136,49 @@ every binary number has a corresponding decimal value (and vice versa)
 | ^ | Binary XOR operator copies the bit if it is set in one operand but not both. | (A ^ B) = 49 |
 | << | Binary Left Shift operator. The left operand's value is moved left by the number of bits specified by the right operand. | A << 2 = 240 |
 | >> | Binary Right Shift operator. The left operand's value is moved right by the number of bits specified by the right operand. | A >> 2 |
+### The Cast and __sizeof__ Operator
+Type Conversions - conversion of data between different types can happen automatically (implicit conversion) by the language or explicit by the program.
+* to effectively develop C programs, you must understand the rules used for the implicit conversion of floating-point and integer values in C
+
+Normally, you shouldn't mix types, but there are occasions when it is useful.
+* remember, C is flexible, and it gives you the freedom, but do not abuse it
+* whenever a floating-point value is assigned to an integer variable in C, the decimal portion of the number gets truncated
+
+```C
+int x = 0;
+float f = 12.125;
+x = f; // value stored in x is the number 12, only the int portion is stored.
+```
+Assigning an integer variable to a floating variable does not cause any change in the value of the number.
+* value is converted by the system and stored in the floating variable
+
+When performing integer arithmetic:
+* if two operands in an expression are integers, then any decimal portion resulting from a division operation is discarded, even if the result is assigned to a floating variable
+* if one operand is an int and the other is a float, then the operation is performed as a floating-point operation
+### The Cast Operator
+Form of explicit conversion!
+* the type cast operator has a higher precedence than all the arithmetic operators except the unary minus and unary plus
+* cast from more precise -> less precise
+
+```C
+int result = (int) 21.51 + (int) 26.99
+// evalulated as 21 + 26
+```
+### __sizeof__ Operator
+You can find out how many bytes are occupied in memory by a given type by using the __sizeof__ operator.
+* __sizeof__ is a special keyword in C
+* it is an actual operator, not a function
+* evaluated at compile time and not at runtime, unless a variable-length array is used in its argument
+* the argument to the __sizeof__ operator can be a variable, an array name, the name of a basic data type, the name of a derived data type, or an expression
+
+__sizeof(int)__ will result in the number of bytes occupied by a variable of type int.
+* you can also apply the __sizeof__ operator to an expression.
+* use the __sizeof__ operator wherever possible to avoid having to calculate and hard-code sizes into your program
+### Other Operators
+The __*__ operator represents a pointer to a variable.
+```C
+*a;
+```
+The __?__ operator is used for comparisons.
+* if the condition is true ? then value X : otherwise value Y
+* also know as the ternary operator
