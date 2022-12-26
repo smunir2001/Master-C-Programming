@@ -161,7 +161,7 @@ Form of explicit conversion!
 * cast from more precise -> less precise
 
 ```C
-int result = (int) 21.51 + (int) 26.99
+int result = (int) 21.51 + (int) 26.99;
 // evalulated as 21 + 26
 ```
 ### __sizeof__ Operator
@@ -177,8 +177,27 @@ __sizeof(int)__ will result in the number of bytes occupied by a variable of typ
 ### Other Operators
 The __*__ operator represents a pointer to a variable.
 ```C
-*a;
+int *a;
 ```
 The __?__ operator is used for comparisons.
 * if the condition is true ? then value X : otherwise value Y
 * also know as the ternary operator
+
+### Operator Precedence
+Operator precedence determines the grouping of terms in an expression and decides how an expression is evaluated.
+* dictates the order of evaluation when two operators share an operand
+* certain operators have higher precedence than others
+* for example, the multiplication operator has a higher precedence than the addition operator
+
+```C
+int x = 7 + 3 * 2;
+// can result in 13 or 20 depending on the order of each operands evaluation
+```
+The order of executing the various operations can make a difference, so C needs unambiguous rules for choosing what to do first.
+* each operator is assigned a precedence level
+    * multiplication and division have a higher precedence than addition and subtraction, so they are performed first
+* whatever is enclosed in parentheses is executed first (should just always use () to group expressoins)
+
+Associativity - what if two operators have the same precedence?
+* then associativty rules are applied
+* if they share an operand, they are executed according to the order in which they occur in the statement (for most operators, the order is from left to right)
